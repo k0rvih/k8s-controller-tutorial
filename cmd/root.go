@@ -20,11 +20,12 @@ to quickly create a Cobra application.
 `,
 	Run: func(cmd *cobra.Command, args []string) {
 		zerolog.TimeFieldFormat = zerolog.TimeFormatUnix
-		log.Info().Msg("This is an info log")
-		log.Debug().Msg("This is a debug log")
-		log.Trace().Msg("This is a trace log")
-		log.Warn().Msg("This is a warn log")
-		log.Error().Msg("This is an error log")
+		log.Info().Msg("I warn you")
+		log.Debug().Msg("Show me the code")
+		log.Trace().Msg("I want to see everything")
+		log.Warn().Msg("Not yet, but close")
+		log.Error().Msg("If you see it, we have a problem")
+		log.Fatal().Msg("I'm done")
 		fmt.Println("Welcome to k8s-controller-tutorial CLI!")
 	},
 }
